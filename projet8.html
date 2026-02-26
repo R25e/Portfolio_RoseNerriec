@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 8</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+                        url('https://source.unsplash.com/1600x900/?data');
+            background-size: cover;
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+        }
+        .context-background {
+            background-color: #e9ecef;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .section-title {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .btn-primary {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+        .btn-primary:hover {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Compétences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Projets.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Logiciels.html">Logiciels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Stage-Alternance.html">Stage/Alternance</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <h1>Migration de données vers ou depuis un environnement NoSQL</h1>
+    </div>
+
+    <div class="container context-background">
+    <h5 class="section-title">Présentation du projet</h5>
+    <div class="row">
+        <div class="col-md-6">
+            <h6><strong>Présentation générale</strong></h6>
+            <p>Dans le cadre de ce projet, nous étions amenés à migrer des données provenant d'une base relationnelle classique, appelée <strong>Comptoir</strong>, vers des environnements NoSQL adaptés à différents usages analytiques. La base relationnelle comprenait des informations sur les ventes, les produits, les clients et la hiérarchie des employés. L’objectif principal était double :</p>
+            <ul>
+                <li>Comprendre et exploiter les avantages des modèles NoSQL pour le traitement de données complexes et volumineuses.</li>
+                <li>Concevoir et mettre en œuvre une migration fiable, tout en conservant l’intégrité et la qualité des données.</li>
+            </ul>
+
+            <p>Notre projet s’est articulé en <strong style="color: #8B0000;">deux grandes parties</strong> :</p>
+            <ul>
+                <li><strong>Migration vers Neo4j (graphe) :</strong> permettre l’analyse des performances commerciales et des relations hiérarchiques entre employés.</li>
+                <li><strong>Migration vers MongoDB (document) :</strong> représenter les données de manière flexible et exploitable pour des requêtes analytiques spécifiques, en privilégiant la structure documentaire adaptée aux besoins métiers.</li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h6><strong>Présentation individuelle</strong></h6>
+            <p>Au sein de l’équipe, mes responsabilités ont été clairement définies pour couvrir à la fois l’analyse, la modélisation et la migration des données. J’ai pris en charge les étapes critiques de la migration vers Neo4j tout en contribuant à la modélisation MongoDB et à la relecture du travail collectif.</p>
+
+            <h6><strong>Missions principales - Base Neo4j</strong></h6>
+                <p>Pour la partie graphe, j’ai été responsable de l’ensemble du processus de migration depuis la base SQL vers Neo4j. Mon rôle a consisté à :</p>
+                <ul>
+                    <li><strong>Analyse initiale :</strong> étudier le schéma relationnel de Comptoir, identifier les tables, les relations et les clés primaires/étrangères, et comprendre la hiérarchie des employés ainsi que les flux commerciaux.</li>
+                    <li><strong>Modélisation du graphe :</strong> concevoir un modèle de données adapté au format Neo4j avec des nœuds et des relations clairement définis, en suivant les conventions de nommage (UpperCamelCase pour les labels, lowerCamelCase pour les propriétés).</li>
+                    <li><strong>Migration et automatisation :</strong> créer des scripts Python paramétrés pour transformer les données SQL en ordres Cypher, incluant la gestion des contraintes, des index et de la prévention des doublons.</li>
+                    <li><strong>Exploitation et validation :</strong> tester les requêtes Cypher dans Jupyter et via des pages HTML autonomes pour vérifier l’intégrité des données et comparer les résultats SQL vs Cypher.</li>
+                </ul>
+                <p>Ces missions m’ont permis de comprendre l’intérêt de Neo4j pour explorer les relations complexes et hiérarchiques et de mettre en pratique des techniques avancées de migration et d’automatisation.</p>
+       
+                <h6><strong>Missions secondaires - Base MongoDB</strong></h6>
+                <p>Pour la partie MongoDB, mon rôle était d’accompagner l’équipe en analysant le schéma relationnel et en proposant une modélisation adaptée au format document. J’ai notamment :</p>
+                <ul>
+                    <li>Étudié les tables et leurs relations pour déterminer comment imbriquer les documents ou utiliser des références entre collections.</li>
+                    <li>Proposé une structure de collections et de documents justifiant mes choix par rapport aux besoins d’analyse et de performance.</li>
+                    <li>Relu et validé le travail de mes camarades pour assurer cohérence, lisibilité et qualité des scripts de migration.</li>
+                </ul>
+                <p>Cette partie m’a permis de développer une vision critique sur les choix de modélisation NoSQL et de comprendre les implications pratiques des différents modèles documentaires.</p>
+            </div>
+    </div>
+
+    <div class="container context-background"> 
+    <h5 class="section-title">Compétences acquises</h5>
+    <div class="row">
+        <div class="col-md-6">
+            <h6><strong>Compétence ciblée – Traiter des données à des fins décisionnelles | Valoriser une production dans un contexte professionnel</strong></h6>
+            <p>Au cours de ce projet, j’ai pu renforcer et approfondir plusieurs compétences techniques et méthodologiques essentielles dans le domaine des bases de données et de la gestion de données complexes :</p>
+            
+            <p>J’ai notamment su :</p>
+            <ul>
+                <li><strong style="color: #8B0000;">Modélisation de données relationnelles et NoSQL :</strong> analyse des schémas de la base Comptoir, transformation vers un modèle graphe Neo4j et conception d’un modèle MongoDB adapté aux besoins analytiques.</li>
+                <li><strong style="color: #8B0000;">Migration de données :</strong> mise en place de scripts Python pour transférer des données relationnelles vers Neo4j en garantissant l’intégrité des relations et l’optimisation des performances.</li>
+                <li><strong style="color: #8B0000;">Maîtrise des requêtes Cypher et SQL :</strong> rédaction et test de requêtes pour vérifier la migration, comparer les résultats avec la base relationnelle, et exploiter pleinement les capacités du graphe.</li>
+                <li><strong style="color: #8B0000;">Travail collaboratif et revue de code :</strong> participation à la relecture des travaux des camarades, intégration des commentaires et harmonisation des scripts pour garantir la qualité collective.</li>
+                <li><strong style="color: #8B0000;">Documentation et restitution :</strong> rédaction de rapports détaillés, explication des choix de modélisation, et communication claire des résultats aux autres membres de l’équipe.</li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h6><strong>Apprentissage et bénéfices</strong></h6>
+            <p>Au-delà des aspects techniques, cette expérience m’a permis de progresser dans ma capacité à gérer un projet de migration complexe et à intégrer plusieurs environnements de données :</p>
+            <ul>
+                <li>Compréhension approfondie des différences entre <strong style="color: #8B0000;">modèles relationnels et modèles NoSQL</strong> et de leur utilisation en fonction des besoins métiers.</li>
+                <li>Capacité à <strong style="color: #8B0000;">analyser des contraintes techniques et proposer des solutions adaptées</strong> pour migrer des données volumineuses sans perte d’information.</li>
+                <li>Renforcement de <strong style="color: #8B0000;">l’esprit critique et de la rigueur</strong> dans le contrôle de la qualité des données et dans la vérification des résultats des migrations.</li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <div class="container context-background">
+        <h5 class="section-title">Preuves des compétences acquises</h5>
+        <p>Voici quelques éléments visuels illustrant les travaux réalisés et les compétences développées durant ce projet :</p>
+        <p>Vous pouvez consulter le notebook complet de migration ici : 
+            <a href="modeles_donnees.zip" download>Télécharger / Ouvrir le notebook</a>
+        </p>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <a href="projet8-1.png" data-lightbox="preuve" data-title="appli criminalité extrait">
+                    <img src="projet8-1.png" class="img-fluid rounded shadow-sm" alt="Preuve 1">
+                </a>
+                <p class="text-center"><strong>Schéma relationnel complet de la base Comptoir</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet8-2.png" data-lightbox="preuve" data-title="appli criminalité résumé">
+                    <img src="projet8-2.png" class="img-fluid rounded shadow-sm" alt="Preuve 2">
+                </a>
+                <p class="text-center"><strong>Modèle de données du graphe correspondant au schéma relationnel</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet8-3.png" data-lightbox="preuve" data-title="appli criminalité analyse univariée">
+                    <img src="projet8-3.png" class="img-fluid rounded shadow-sm" alt="Preuve 3">
+                </a>
+                <p class="text-center"><strong>Justification des choix de modélisation</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet8-4.png" data-lightbox="preuve" data-title="appli criminalité analyse multivariée">
+                    <img src="projet8-4.png" class="img-fluid rounded shadow-sm" alt="Preuve 4">
+                </a>
+                <p class="text-center"><strong>Squelettes des ordres de migration vers Neo4j - exemple pour la table Fournisseur</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet8-5.png" data-lightbox="preuve" data-title="appli criminalité corrélation">
+                    <img src="projet8-5.png" class="img-fluid rounded shadow-sm" alt="Preuve 5">
+                </a>
+                <p class="text-center"><strong>Construction des ordres Cypher paramétrés - exemple pour la table Fournisseur</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet8-6.png" data-lightbox="preuve" data-title="appli criminalité cartographie">
+                    <img src="projet8-6.png" class="img-fluid rounded shadow-sm" alt="Preuve 6">
+                </a>
+                <p class="text-center"><strong>Création de contraintes pour gérer les doublons et d'index </strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet8-7.png" data-lightbox="preuve" data-title="analyse Excel">
+                    <img src="projet8-7.png" class="img-fluid rounded shadow-sm" alt="Preuve 7">
+                </a>
+                <p class="text-center"><strong>Procédure de migration par table pour lire les données de la table et appeler les ordres Cypher paramétrés correspondants pour créer les noeuds/realtions dans Neo4j</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet8-8.png" data-lightbox="preuve" data-title="analyse Excel matrices">
+                    <img src="projet8-8.png" class="img-fluid rounded shadow-sm" alt="Preuve 8">
+                </a>
+                <p class="text-center"><strong>Visualisation du graphe final dans une page HTML autonome - partie 1</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet8-9.png" data-lightbox="preuve" data-title="interprétation premier plan factoriel">
+                    <img src="projet8-9.png" class="img-fluid rounded shadow-sm" alt="Preuve 10">
+                </a>
+                <p class="text-center"><strong>Visualisation du graphe final dans une page HTML autonome - partie 2</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet8-10.png" data-lightbox="preuve" data-title="ACP">
+                    <img src="projet8-10.png" class="img-fluid rounded shadow-sm" alt="Preuve 11">
+                </a>
+                <p class="text-center"><strong>Visualisation du graphe final dans une page HTML autonome - partie 3</strong></p>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+
+    <div class="container text-center my-4">
+        <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mon Portfolio</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

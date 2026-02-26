@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 7</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+                        url('https://source.unsplash.com/1600x900/?data');
+            background-size: cover;
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+        }
+        .context-background {
+            background-color: #e9ecef;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .section-title {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .btn-primary {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+        .btn-primary:hover {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Compétences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Projets.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Logiciels.html">Logiciels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Stage-Alternance.html">Stage/Alternance</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <h1>Reporting d'une analyse multivariée</h1>
+    </div>
+
+    <div class="container context-background">
+    <h5 class="section-title">Présentation du projet</h5>
+    <div class="row">
+        <div class="col-md-6">
+            <h6><strong>Présentation générale</strong></h6>
+            <p>Ce projet visait à concevoir une application de data visualisation interactive, fondée sur une analyse statistique exploratoire avancée, intégrée à un processus décisionnel métier. Il s’agissait d’allier compétences en <strong style="color: #8B0000;">statistique multivariée</strong> (ACP, ACM, classification) et en <strong style="color: #8B0000;">programmation R-shiny</strong> pour créer un outil de reporting automatisé adapté à un cas d’usage concret.</p>
+
+            <p>Notre projet s’est articulé en <strong style="color: #8B0000;">quatre grandes parties</strong> :</p>
+            <ul>
+                <li><strong>Initiation à R-shiny :</strong> découverte de l’environnement, création d’une première application avec fonctionnalités interactives (graphiques, tableaux, filtres...) sur des données de criminalité aux États-Unis</li>
+                <li><strong>Analyse exploratoire multivariée :</strong> calculs statistiques sous Excel (moyennes, écarts types, corrélations), étude de la distance entre états américains, interprétation statistique</li>
+                <li><strong>Intégration de l’ACP dans notre première application :</strong> utilisation de Factoshiny pour enrichir l’interface avec une analyse factorielle, graphiques dynamiques et filtrages par axes et variables</li>
+                <li><strong>Création d'une nouvelle application sur cas réel :</strong> développement d’une application R-shiny complète à partir de données réelles sur la qualité de vie, dans le cadre d’un cas métier simulé (agence immobilière Settle Home)</li>
+            </ul>
+
+            <p>Cette dernière partie était la plus importante, car elle reprenait toutes les notions et compétences développées précédemment.</p>
+
+            <p>Notre cas d’usage simulait les besoins d’une agence immobilière française spécialisée dans l’expatriation. L’objectif : aider des clients français à <strong style="color: #8B0000;">choisir un pays d’expatriation</strong> en fonction de critères liés à la <strong style="color: #8B0000;">qualité de vie</strong> (coût de la vie, pouvoir d’achat, qualité des soins, climat, sécurité, etc.).</p>
+
+            <p>Deux types d’analyses ont été menés :</p>
+            <ul>
+                <li><strong style="color: #8B0000;">ACP :</strong> pour identifier les pays les plus proches de la France selon des critères économiques et qualitatifs</li>
+                <li><strong style="color: #8B0000;">ACM :</strong> pour regrouper les pays selon leurs profils qualitatifs (climat, sécurité, soins, etc.)</li>
+            </ul>
+
+            <p>L’application finale intégrait des visualisations dynamiques, des filtres interactifs, des analyses descriptives et multivariées, ainsi que des fonctionnalités de restitution pensées pour un <strong style="color: #8B0000;">usage professionnel et récurrent</strong>.</p>
+        </div>
+
+        <div class="col-md-6">
+            <h6><strong>Présentation individuelle</strong></h6>
+            <p>Le projet a été mené en plusieurs phases, avec des effectifs différents selon les parties. J’ai été <strong style="color: #8B0000;">entièrement responsable des deux premières parties</strong>, avant de collaborer en binôme pour la troisième, puis en groupe de quatre pour la dernière. J’ai été à l’initiative de l’application R-shiny que nous avons enrichie tout au long du projet.</p>
+
+            <h6><strong style="color: #222;">Tâches principales</strong></h6>
+            <ul>
+                <li><strong style="color: #8B0000;">Partie 1 – Développement initial sous R-shiny (travail individuel) :</strong> création complète d’une première application Shiny, découverte de la structure <code>ui/server/global</code>, mise en place d'interfaces interactives (graphique dynamique, filtres, tableau croisé) à partir de données sur la criminalité aux États-Unis</li>
+
+                <li><strong style="color: #8B0000;">Partie 2 – Analyse statistique multivariée sous Excel (travail individuel) :</strong> traitement des données sous Excel (centrage-réduction, corrélations, distances), création de graphiques, premières interprétations statistiques en lien avec la future ACP</li>
+
+                <li><strong style="color: #8B0000;">Partie 3 – ACP dans l’application (travail en binôme) :</strong> reprise de mon application initiale comme base, mise en place de modules d’analyse factorielle via <code>Factoshiny</code>, filtres par axes, visualisation des plans factoriels. Chacune a réalisé une ACP de son côté, puis nous avons intégré les résultats ensemble</li>
+
+                <li><strong style="color: #8B0000;">Partie 4 – Application métier finale (travail en groupe de 4) :</strong> j’ai proposé le sujet (comparaison des pays selon leur qualité de vie pour l’expatriation), puis j’ai adapté et enrichi mon application existante pour ce nouveau cas. J’ai développé l’interface finale avec intégration de l’ACP et ACM sur des données réelles, filtres dynamiques, pages de synthèse décisionnelle, tout en gardant une logique modulaire et claire dans le code</li>
+            </ul>
+
+            <h6><strong style="color: #222;">Tâches secondaires</strong></h6>
+            <ul>
+                <li><strong style="color: #8B0000;">Relecture des livrables écrits :</strong> vérification de la cohérence des rapports à rendre (SAÉ, soutenances), correction de fautes, reformulation pour clarté et fluidité</li>
+                <li><strong style="color: #8B0000;">Relecture des supports de présentation :</strong> mise au point des diaporamas pour les soutenances orales, amélioration du discours narratif et visuel</li>
+                <li><strong style="color: #8B0000;">Support technique ponctuel :</strong> aide à l’utilisation de Shiny pour d’autres membres du groupe, conseils sur la structuration du code, adaptation de l’application à différents cas d’usage</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container context-background"> 
+    <h5 class="section-title">Compétences acquises</h5>
+    <div class="row">
+        <div class="col-md-6">
+            <h6><strong>Compétence ciblée – Traiter des données à des fins décisionnelles | Analyser statistiquement les données | Valoriser une production dans un contexte professionnel</strong></h6>
+            <p>Ce projet progressif en 4 étapes m’a permis de consolider mes compétences en <strong style="color: #8B0000;">statistique multivariée, développement d’applications interactives, valorisation de données dans une optique métier et collaboration en groupe</strong>.</p>
+
+            <p>J’ai notamment su :</p>
+            <ul>
+                <li><strong style="color: #8B0000;">Concevoir une application R-shiny</strong> modulaire dès la première partie, puis la faire évoluer pour intégrer des analyses multivariées (ACP/ACM) et répondre à des cas métiers concrets</li>
+                <li><strong style="color: #8B0000;">Structurer et analyser</strong> des jeux de données réels, d'abord sur la criminalité puis sur des indicateurs internationaux de qualité de vie</li>
+                <li>Mettre en œuvre des <strong style="color: #8B0000;">analyses exploratoires et multivariées</strong> (corrélations, distances, ACP, ACM) en adaptant les outils à la nature des données</li>
+                <li><strong style="color: #8B0000;">Mobiliser des packages R</strong> (FactoMineR, Factoshiny, shinythemes...) en appréciant leur valeur ajoutée dans le cadre du projet</li>
+                <li><strong style="color: #8B0000;">Développer une solution interactive</strong> valorisable dans un contexte professionnel, en permettant à l’utilisateur d'explorer et filtrer dynamiquement les résultats</li>
+                <li><strong style="color: #8B0000;">Collaborer efficacement</strong> en binôme puis en équipe de 4, en contribuant activement au développement et à la relecture des livrables</li>
+            </ul>
+
+            <p>Ce projet m’a également permis de prendre conscience de l’importance d’une <strong style="color: #8B0000;">démarche structurée, rigoureuse et communicable</strong> autour de la donnée, et de la <strong style="color: #8B0000;">modularité du code</strong> dans un cadre collaboratif.</p>
+        </div>
+
+        <div class="col-md-6">
+            <h6><strong>Apprentissage et bénéfices</strong></h6>
+            <p>Au-delà de la technique, ce projet m’a permis de progresser dans :</p>
+            <ul>
+                <li>La capacité à <strong style="color: #8B0000;">construire une chaîne complète de traitement et d’analyse</strong> de données en partant d’une problématique métier</li>
+                <li>La <strong style="color: #8B0000;">distinction entre exploration (statistiques descriptives) et modélisation</strong> (ACP, ACM), en comprenant leurs apports respectifs</li>
+                <li>La <strong style="color: #8B0000;">valorisation interactive</strong> d’analyses statistiques dans un outil compréhensible par un non-spécialiste</li>
+                <li>Le <strong style="color: #8B0000;">choix réfléchi d’indicateurs et de représentations</strong> en lien avec le public cible (expatriés, décideurs, etc.)</li>
+                <li>La <strong style="color: #8B0000;">rigueur attendue dans la relecture de documents</strong>, pour assurer une communication claire, sans erreur, fidèle à l’analyse</li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <div class="container context-background">
+        <h5 class="section-title">Preuves des compétences acquises</h5>
+        <p>Voici quelques éléments visuels illustrant les travaux réalisés et les compétences développées durant ce projet :</p>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <a href="projet7-1.png" data-lightbox="preuve" data-title="appli criminalité extrait">
+                    <img src="projet7-1.png" class="img-fluid rounded shadow-sm" alt="Preuve 1">
+                </a>
+                <p class="text-center"><strong>Extrait de l'application développée sur la criminalité aux États-Unis - Extrait des données</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-2.png" data-lightbox="preuve" data-title="appli criminalité résumé">
+                    <img src="projet7-2.png" class="img-fluid rounded shadow-sm" alt="Preuve 2">
+                </a>
+                <p class="text-center"><strong>Extrait de l'application développée sur la criminalité aux États-Unis - Résumé des données</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-3.png" data-lightbox="preuve" data-title="appli criminalité analyse univariée">
+                    <img src="projet7-3.png" class="img-fluid rounded shadow-sm" alt="Preuve 3">
+                </a>
+                <p class="text-center"><strong>Extrait de l'application développée sur la criminalité aux États-Unis - Analyse univariée</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-4.png" data-lightbox="preuve" data-title="appli criminalité analyse multivariée">
+                    <img src="projet7-4.png" class="img-fluid rounded shadow-sm" alt="Preuve 4">
+                </a>
+                <p class="text-center"><strong>Extrait de l'application développée sur la criminalité aux États-Unis - Analyse multivariée</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-5.png" data-lightbox="preuve" data-title="appli criminalité corrélation">
+                    <img src="projet7-5.png" class="img-fluid rounded shadow-sm" alt="Preuve 5">
+                </a>
+                <p class="text-center"><strong>Extrait de l'application développée sur la criminalité aux États-Unis - Matrice des corrélations</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-6.png" data-lightbox="preuve" data-title="appli criminalité cartographie">
+                    <img src="projet7-6.png" class="img-fluid rounded shadow-sm" alt="Preuve 6">
+                </a>
+                <p class="text-center"><strong>Extrait de l'application développée sur la criminalité aux États-Unis - Cartographie</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-7.png" data-lightbox="preuve" data-title="analyse Excel">
+                    <img src="projet7-7.png" class="img-fluid rounded shadow-sm" alt="Preuve 7">
+                </a>
+                <p class="text-center"><strong>Analyse Excel sur les données de criminalité - calculs des indicateurs</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-8.png" data-lightbox="preuve" data-title="analyse Excel matrices">
+                    <img src="projet7-8.png" class="img-fluid rounded shadow-sm" alt="Preuve 8">
+                </a>
+                <p class="text-center"><strong>Analyse Excel sur les données de criminalité - calculs des matrices de corrélations et de variance-covariance</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-10.png" data-lightbox="preuve" data-title="interprétation premier plan factoriel">
+                    <img src="projet7-10.png" class="img-fluid rounded shadow-sm" alt="Preuve 10">
+                </a>
+                <p class="text-center"><strong>Interprétation du premier plan factoriel</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-11.png" data-lightbox="preuve" data-title="ACP">
+                    <img src="projet7-11.png" class="img-fluid rounded shadow-sm" alt="Preuve 11">
+                </a>
+                <p class="text-center"><strong>Extrait de l'ACP intégrée dans l'application de départ - Résumé des résultats</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-12.png" data-lightbox="preuve" data-title="ACP inertie">
+                    <img src="projet7-12.png" class="img-fluid rounded shadow-sm" alt="Preuve 12">
+                </a>
+                <p class="text-center"><strong>Extrait de l'ACP - Pourcentage d'inertie et valeurs propres</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-13.png" data-lightbox="preuve" data-title="ACP description axes">
+                    <img src="projet7-13.png" class="img-fluid rounded shadow-sm" alt="Preuve 13">
+                </a>
+                <p class="text-center"><strong>Extrait de l'ACP - Description automatique des axes</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-14.png" data-lightbox="preuve" data-title="ACP graphe des individus">
+                    <img src="projet7-14.png" class="img-fluid rounded shadow-sm" alt="Preuve 14">
+                </a>
+                <p class="text-center"><strong>Extrait de l'ACP - Graphique des individus (des états)</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-15.png" data-lightbox="preuve" data-title="appli qualité de vie">
+                    <img src="projet7-15.png" class="img-fluid rounded shadow-sm" alt="Preuve 15">
+                </a>
+                <p class="text-center"><strong>Extrait de le nouvelle application sur la qualité de vie dans le monde - Résumé des données</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-16.png" data-lightbox="preuve" data-title="appli qualité de vie">
+                    <img src="projet7-16.png" class="img-fluid rounded shadow-sm" alt="Preuve 16">
+                </a>
+                <p class="text-center"><strong>Extrait de le nouvelle application sur la qualité de vie dans le monde - Matrice des corrélations</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-17.png" data-lightbox="preuve" data-title="appli qualité de vie">
+                    <img src="projet7-17.png" class="img-fluid rounded shadow-sm" alt="Preuve 17">
+                </a>
+                <p class="text-center"><strong>Extrait de le nouvelle application sur la qualité de vie dans le monde - Carte du monde pour repérer les pays ayant le même niveau de vie</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-18.png" data-lightbox="preuve" data-title="appli qualité de vie">
+                    <img src="projet7-18.png" class="img-fluid rounded shadow-sm" alt="Preuve 18">
+                </a>
+                <p class="text-center"><strong>Extrait de le nouvelle application sur la qualité de vie dans le monde - Carte du monde pour repérer les pays ayant le même niveau de vie (suite)</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-19.png" data-lightbox="preuve" data-title="appli qualité de vie">
+                    <img src="projet7-19.png" class="img-fluid rounded shadow-sm" alt="Preuve 19">
+                </a>
+                <p class="text-center"><strong>Extrait de le nouvelle application sur la qualité de vie dans le monde - Tableau comparatif pour trouver un pays similaire à la France</strong></p>
+            </div>
+
+
+            <div class="col-md-6 mb-3">
+                <a href="projet7-20.png" data-lightbox="preuve" data-title="appli qualité de vie">
+                    <img src="projet7-20.png" class="img-fluid rounded shadow-sm" alt="Preuve 20">
+                </a>
+                <p class="text-center"><strong>Extrait de le nouvelle application sur la qualité de vie dans le monde - Podium des pays similaire à la France</strong></p>
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+    
+
+    <div class="container text-center my-4">
+        <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mon Portfolio</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

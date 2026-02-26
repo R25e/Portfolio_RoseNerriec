@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+                        url('https://source.unsplash.com/1600x900/?data');
+            background-size: cover;
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+        }
+        .context-background {
+            background-color: #e9ecef;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .section-title {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .btn-primary {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+        .btn-primary:hover {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Compétences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Projets.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Logiciels.html">Logiciels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Stage-Alternance.html">Stage/Alternance</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <h1>Expliquer ou prédire une variable quantitative à partir de plusieurs facteurs</h1>
+    </div>
+
+    <div class="container context-background">
+    <h5 class="section-title">Présentation du projet</h5>
+    <div class="row">
+        <div class="col-md-6">
+            <h6><strong>Présentation générale</strong></h6>
+            <p>Ce projet avait pour objectif de mettre en œuvre une <strong style="color: #8B0000;">analyse statistique complète</strong> sur une variable quantitative, dans un cadre appliqué et autonome. Il s’inscrivait dans une démarche de modélisation explicative et/ou prédictive, en suivant toutes les étapes d’un cycle d’analyse statistique rigoureux.</p>
+
+            <p>Le projet visait à :</p>
+            <ul>
+                <li>Choisir un thème librement, pertinent et exploitable statistiquement</li>
+                <li>Rechercher, nettoyer et préparer un <strong style="color: #8B0000;">jeu de données adapté</strong></li>
+                <li>Choisir une variable d'intérêt pour faire une <strong style="color: #8B0000;">analyse cohérente, pertinente et exploitable</strong></li>
+                <li>Conduire une <strong style="color: #8B0000;">analyse descriptive approfondie</strong> de la variable d’intérêt</li>
+                <li>Mettre en œuvre une <strong style="color: #8B0000;">modélisation statistique avancée</strong> (régression linéaire multiple)</li>
+                <li>Restituer les résultats à l’écrit et à l’oral, de façon claire et argumentée</li>
+            </ul>
+
+            <p>Le sujet choisi portait sur le football professionnel, et plus précisément sur la <strong style="color: #8B0000;">Ligue 1</strong> française. Nous avons analysé les facteurs expliquant la <strong style="color: #8B0000;">possession du ballon à domicile</strong> lors des matchs de la saison 2018.</p>
+
+            <p>Le jeu de données, issu de Kaggle, comportait 373 matchs et 15 variables explicatives, incluant des indicateurs tels que les tirs cadrés, les fautes, les corners, ou encore les joueurs absents. Notre <strong style="color: #8B0000;">variable d’intérêt</strong> était la possession du ballon à domicile, exprimée sous forme décimale.</p>
+
+            <p>Le projet s’est articulé en <strong style="color: #8B0000;">trois grandes étapes</strong> :</p>
+            <ul>
+                <li><strong>Choix du sujet et collecte des données :</strong> recherche collaborative sur la thématique, sélection du jeu de données, création d’une fiche descriptive</li>
+                <li><strong>Préparation et analyse descriptive :</strong> nettoyage, recodage, analyse univariée et multivariée, premières modélisations simples</li>
+                <li><strong>Modélisation avancée :</strong> mise en œuvre d’un modèle de régression linéaire multiple avec sélection descendante des variables explicatives</li>
+            </ul>
+
+            <p>Cette expérience nous a permis de mobiliser des outils statistiques concrets et d’approfondir notre capacité à <strong style="color: #8B0000;">extraire, structurer et interpréter l’information</strong> à partir de données réelles, dans un domaine d’intérêt personnel.</p>
+        </div>
+
+        <div class="col-md-6">
+            <h6><strong>Présentation individuelle</strong></h6>
+            <p>Ce projet a été mené en trinôme, avec une répartition claire et progressive des tâches. J’ai contribué activement à toutes les étapes, en assumant plusieurs responsabilités clés.</p>
+
+            <h6><strong style="color: #222;">Tâches principales</strong></h6>
+            <ul>
+                <li><strong style="color: #8B0000;">Recherche du jeu de données</strong> : j’ai participé à la recherche collaborative sur le thème du football, à la sélection du dataset sur Kaggle, et à la vérification de la pertinence des variables disponibles</li>
+                <li><strong style="color: #8B0000;">Réalisation du notebook descriptif</strong> : import des données, gestion des valeurs manquantes, transformation des variables, premières statistiques descriptives sur la variable cible et sur l’ensemble du jeu</li>
+                <li><strong style="color: #8B0000;">Préparation et traitement des données</strong> : j’ai pris en charge l’analyse univariée complète de la possession de balle, puis des autres variables (quantitatives et qualitatives), et j’ai mené l’analyse multivariée exploratoire</li>
+                <li><strong style="color: #8B0000;">Modélisation statistique</strong> : mise en œuvre d’un modèle de régression linéaire multiple, sélection descendante des variables avec validation par la fonction <code>anova()</code>, interprétation des résultats, vérification des hypothèses du modèle</li>
+                <li><strong style="color: #8B0000;">Préparation de la soutenance</strong> : rédaction de ma partie du texte oral et réalisation du support visuel final (diaporama), en lien avec les résultats de modélisation</li>
+            </ul>
+
+            <h6><strong style="color: #222;">Tâches secondaires</strong></h6>
+            <p>En parallèle, j’ai contribué aux travaux de groupe et à la cohérence globale du projet :</p>
+            <ul>
+                <li><strong style="color: #8B0000;">Participation à la création du dictionnaire des données</strong> : échanges sur la définition des variables et leur utilisation dans le modèle</li>
+                <li><strong style="color: #8B0000;">Relecture critique des livrables</strong> : vérification du diaporama autoportant et du rapport final, suggestions de modifications et relecture des textes produits par mes camarades</li>
+                <li><strong style="color: #8B0000;">Réflexion sur les méthodes de modélisation</strong> : discussions régulières sur le choix des approches, analyse des résultats intermédiaires et aide à la validation collective des décisions méthodologiques</li>
+            </ul>
+        </div>
+    </div>    
+
+    <div class="container context-background">
+    <h5 class="section-title">Compétences acquises</h5>
+    <div class="row">
+        <div class="col-md-6">
+            <h6><strong>Compétence ciblée – Modéliser les données dans un cadre statistique | Analyser statistiquement des données | Valoriser une production dans un contexte professionnel</strong></h6>
+            <p>Ce projet, appliqué au championnat de Ligue 1, m’a permis de renforcer mes compétences en <strong style="color: #8B0000;">statistique appliquée, modélisation, traitement des données sportives et communication des résultats</strong>.</p>
+
+            <p>J’ai notamment su :</p>
+            <ul>
+                <li><strong style="color: #8B0000;">Nettoyer, structurer et sélectionner</strong> des indicateurs pertinents parmi un grand nombre de variables issues de bases sportives ouvertes</li>
+                <li>Mener une <strong style="color: #8B0000;">analyse exploratoire approfondie</strong> (statistiques descriptives, visualisations dynamiques, corrélations)</li>
+                <li><strong style="color: #8B0000;">Choisir une variable d’intérêt</strong> cohérente avec la problématique métier et construire une base adaptée à une régression multiple</li>
+                <li><strong style="color: #8B0000;">Mettre en œuvre une modélisation statistique complète</strong> (régression linéaire, tests de significativité, interprétation des coefficients)</li>
+                <li><strong style="color: #8B0000;">Synthétiser les résultats</strong> de manière claire, en soulignant les effets observés et les limites du modèle</li>
+            </ul>
+
+            <p>Ce projet m’a également permis de consolider ma capacité à formuler des hypothèses testables, à les confronter aux données et à restituer une démarche rigoureuse dans un cadre professionnel exigeant.</p>
+        </div>
+
+        <div class="col-md-6">
+            <h6><strong>Apprentissage et bénéfices</strong></h6>
+            <p>Au-delà des aspects techniques, ce projet m’a permis de progresser dans :</p>
+            <ul>
+                <li>La capacité à <strong style="color: #8B0000;">construire un raisonnement statistique complet</strong> à partir d’une problématique issue du monde du sport</li>
+                <li>La <strong style="color: #8B0000;">distinction entre exploration et modélisation</strong>, en comprenant leurs usages complémentaires</li>
+                <li>L’analyse de la <strong style="color: #8B0000;">validité des hypothèses</strong> à travers la mise en œuvre de tests statistiques</li>
+                <li>La <strong style="color: #8B0000;">défense argumentée des choix méthodologiques</strong>, en justifiant les indicateurs, les variables et les techniques utilisées</li>
+                <li>Une meilleure compréhension de <strong style="color: #8B0000;">l’impact du type de données</strong> (ici, sportives, quantitatives, corrélées) sur les outils statistiques mobilisables</li>
+                <li>La capacité à <strong style="color: #8B0000;">communiquer clairement</strong> les résultats dans une perspective décisionnelle</li>
+            </ul>
+        </div>
+    </div>   
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <div class="container context-background">
+        <h5 class="section-title">Preuves des compétences acquises</h5>
+        <p>Voici quelques éléments visuels illustrant les travaux réalisés et les compétences développées durant ce projet :</p>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <a href="projet6-1.png" data-lightbox="preuve" data-title="Jeu de données">
+                    <img src="projet6-1.png" class="img-fluid rounded shadow-sm" alt="Preuve 1">
+                </a>
+                <p class="text-center"><strong>Extrait de notre jeu de données complet sur la Ligue 1</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-2.png" data-lightbox="preuve" data-title="Dictionnaire des donnéesn">
+                    <img src="projet6-2.png" class="img-fluid rounded shadow-sm" alt="Preuve 2">
+                </a>
+                <p class="text-center"><strong>Extrait de notre dictionnaire des données</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-3.png" data-lightbox="preuve" data-title="Premières analyses">
+                    <img src="projet6-3.png" class="img-fluid rounded shadow-sm" alt="Preuve 3">
+                </a>
+                <p class="text-center"><strong>Extrait de notre code R permettant d'importer et de transformer les données</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-5.png" data-lightbox="preuve" data-title="Diaporama">
+                    <img src="projet6-5.png" class="img-fluid rounded shadow-sm" alt="Preuve 4">
+                </a>
+                <p class="text-center"><strong>Extrait de notre diaporama auto-portant sur la description et le contexte de notre projet</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-6.png" data-lightbox="preuve" data-title="diaporama">
+                    <img src="projet6-6.png" class="img-fluid rounded shadow-sm" alt="Preuve 5">
+                </a>
+                <p class="text-center"><strong>Extrait de notre diaporama auto-portant sur les données et la problématique de notre projet</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-7.png" data-lightbox="preuve" data-title="diaporama">
+                    <img src="projet6-7.png" class="img-fluid rounded shadow-sm" alt="Preuve 6">
+                </a>
+                <p class="text-center"><strong>Extrait de notre diaporama auto-portant sur les pré-traitements réalisés</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-4.png" data-lightbox="preuve" data-title="analyse univariée">
+                    <img src="projet6-4.png" class="img-fluid rounded shadow-sm" alt="Preuve 7">
+                </a>
+                <p class="text-center"><strong>Exemple de l'analyse univariée sur la variable d'intérêt (possession du ballon à domicile)</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-8.png" data-lightbox="preuve" data-title="matrice de corrélation">
+                    <img src="projet6-8.png" class="img-fluid rounded shadow-sm" alt="Preuve 8">
+                </a>
+                <p class="text-center"><strong>Matrice de corrélation des variables explicatives</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-9.png" data-lightbox="preuve" data-title="analyse multivariée">
+                    <img src="projet6-9.png" class="img-fluid rounded shadow-sm" alt="Preuve 9">
+                </a>
+                <p class="text-center"><strong>Exemple de l'analyse multivariée sur la variable d'intérêt (possession du ballon à domicile) et les attaques</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-10.png" data-lightbox="preuve" data-title="regression méthodologies">
+                    <img src="projet6-10.png" class="img-fluid rounded shadow-sm" alt="Preuve 10">
+                </a>
+                <p class="text-center"><strong>Extrait de la méthodologie et des hypothèses mises en place pour la régression linéaire multiple</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-11.png" data-lightbox="preuve" data-title="regréssion hypothèses">
+                    <img src="projet6-11.png" class="img-fluid rounded shadow-sm" alt="Preuve 11">
+                </a>
+                <p class="text-center"><strong>Exemple de validation d'hypothèses du modèle de régression linéaire multipe</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-12.png" data-lightbox="preuve" data-title="ecriture modele complet">
+                    <img src="projet6-12.png" class="img-fluid rounded shadow-sm" alt="Preuve 12">
+                </a>
+                <p class="text-center"><strong>Ecriture du modèle de régression linéaire multiple complet</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-13.png" data-lightbox="preuve" data-title="methode descendante">
+                    <img src="projet6-13.png" class="img-fluid rounded shadow-sm" alt="Preuve 13">
+                </a>
+                <p class="text-center"><strong>Extrait de la méthode descendante réalisée pour trouver le meilleur modèle</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-14.png" data-lightbox="preuve" data-title="suite méthode descendante">
+                    <img src="projet6-14.png" class="img-fluid rounded shadow-sm" alt="Preuve 14">
+                </a>
+                <p class="text-center"><strong>Extrait de la méthode descendante réalisée pour trouver le meilleur modèle</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-15.png" data-lightbox="preuve" data-title="modèle final">
+                    <img src="projet6-15.png" class="img-fluid rounded shadow-sm" alt="Preuve 15">
+                </a>
+                <p class="text-center"><strong>Modèle final ajusté</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet6-16.png" data-lightbox="preuve" data-title="prédiction">
+                    <img src="projet6-16.png" class="img-fluid rounded shadow-sm" alt="Preuve 16">
+                </a>
+                <p class="text-center"><strong>Prédiction réalisée à partir de notre modèle final ajusté pour un match entre Nice et Monaco</strong></p>
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+    
+
+    <div class="container text-center my-4">
+        <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mon Portfolio</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

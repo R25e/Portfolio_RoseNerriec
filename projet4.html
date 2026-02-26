@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+                        url('https://source.unsplash.com/1600x900/?data');
+            background-size: cover;
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+        }
+        .context-background {
+            background-color: #e9ecef;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .section-title {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .btn-primary {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+        .btn-primary:hover {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Compétences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Projets.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Logiciels.html">Logiciels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Stage-Alternance.html">Stage/Alternance</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="hero">
+        <h1>Analyse de données, reporting et datavisualisation</h1>
+    </div>
+
+    <div class="container context-background">
+        <h5 class="section-title">Présentation du projet</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <h6><strong>Présentation générale</strong></h6>
+                <p>Ce projet consistait, de façon générale, en l’intégration et la gestion d’un projet professionnel nécessitant de mobiliser des compétences à la fois en traitement, en analyse et en valorisation des données.</p>
+    
+                <p>Nous avons travaillé sur une problématique actuelle concernant la <strong style="color: #8B0000;">gestion des données d’activité dans les hôpitaux psychiatriques français</strong>. Ces données mensuelles incluent des informations sur les patients, les soins, les admissions et sorties, et nécessitent une <strong style="color: #8B0000;">analyse approfondie</strong> pour être exploitées efficacement.</p>
+    
+                <p>Nous avons collaboré avec l'<strong style="color: #8B0000;">Établissement Public de Santé Mentale (EPSM) Jean-Martin CHARCOT</strong>, situé à Caudan en Bretagne. Deux fichiers volumineux nous ont été transmis par Bénédicte Le Bouffos (analyste de données à l’EPSM) :</p>
+                <ul>
+                    <li><strong style="color: #8B0000;">RAA</strong> : actes ambulatoires, avec 107 262 lignes et 23 colonnes.</li>
+                    <li><strong style="color: #8B0000;">RPS</strong> : séquences d’hospitalisation, avec 7 977 lignes et 39 colonnes.</li>
+                </ul>
+    
+                <p>Notre objectif était de créer une <strong style="color: #8B0000;">application permettant d’injecter ces fichiers</strong> pour produire des <strong style="color: #8B0000;">tableaux de bord</strong> et des <strong style="color: #8B0000;">indicateurs</strong> à destination des professionnels de santé (médecins, infirmiers, cadres, direction).</p>
+    
+                <p>Cette solution devait être accessible à des utilisateurs <strong style="color: #8B0000;">sans compétences informatiques avancées</strong>.</p>
+            </div>
+    
+            <div class="col-md-6">
+                <h6><strong>Présentation individuelle</strong></h6>
+                <p>Ce projet s’est déroulé sur une durée de plusieurs mois et s’apparente, par son ampleur et son organisation, à un véritable stage en conditions professionnelles.</p>
+                <p>Durant ce projet, j’ai réalisé plusieurs tâches clés, particulièrement techniques et chronophages :</p>
+    
+                <h6><strong style="color: #222;">Tâches principales</strong></h6>
+                <ul>
+                    <li>Récupération et <strong style="color: #8B0000;">nettoyage des données</strong> des deux fichiers (RAA et RPS).</li>
+                    <li><strong style="color: #8B0000;">Création de variables supplémentaires.</strong> J’ai codé plusieurs variables pertinentes, telles que le calcul de l’âge des patients à partir de leur date de naissance, ou d’autres transformations facilitant les analyses futures. Cette tâche s’est révélée particulièrement chronophage en raison du <strong style="color: #8B0000;">volume important des données.</strong></li>
+                    <li>Préparation des données pour permettre leur exploitation dans les tableaux de bord.</li>
+                    <li>Rédaction de la documentation : Rédaction des <strong style="color: #8B0000;">cahiers des charges</strong> après les deux rencontres avec le client, afin de formaliser les besoins et les attentes. Rédaction des <strong style="color: #8B0000;">documents en anglais</strong> expliquant le projet. Et contribution importante à la <strong style="color: #8B0000;">rédaction du rapport final.</strong></li>
+                </ul>
+
+                <h6><strong style="color: #222;">Tâches secondaires</strong></h6>
+                <p>En complément de mes responsabilités principales, j’ai également réalisé un certain nombre de tâches secondaires, notamment :</p>
+                <ul>
+                    <li><strong style="color: #8B0000;">Soutien à la transformation des données</strong> : j’ai aidé ma camarade dans d'autres transformations de données, par exemple le recodage des entêtes de variables pour les rendre plus compréhensibles.</li>
+                    <li><strong style="color: #8B0000;">Contribution à la conception du tableau de bord</strong> : j’ai collaboré avec mes camarades pour proposer des idées <strong style="color: #8B0000;">d’indicateurs pertinents</strong> et participer à la <strong style="color: #8B0000;">programmation statistique dans l’outil R Shiny.</strong></li>
+                    <li>Support visuel pour les soutenances : j’ai aidé dans la réalisation des présentations PowerPoint pour nos soutenances orales devant les professeurs et les représentants de l’établissement.</li> 
+                    <li>Participation globale à <strong style="color: #8B0000;">l’amélioration du projet</strong> : comme chaque membre de l’équipe, je suis intervenue à plusieurs reprises pour proposer des idées, valider des choix techniques ou méthodologiques, et contribuer à la cohérence globale du projet.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container context-background">
+        <h5 class="section-title">Compétence acquises</h5>
+        <div class="row">
+            <div class="col-md-6">
+                <h6><strong>Compétence ciblée - Analyser statistiquement des données</strong></h6>
+                <p>Ce projet m’a permis de développer des compétences clés dans <strong style="color: #8B0000;">la programmation statistique, l’analyse et la visualisation de données</strong> dans un contexte professionnel concret.</p>
+                
+                <p>En manipulant des jeux de données brutes, j’ai su :</p>
+                <ul>
+                    <li>Utiliser <strong style="color: #8B0000;">VBA sur Excel</strong> pour automatiser des tâches et structurer le code à l’aide de variables bien déclarées.</li>
+                    <li>Créer un <strong style="color: #8B0000;">tableau de bord interactif avec R Shiny</strong> en utilisant des packages adaptés et des scripts robustes.</li>
+                    <li><strong style="color: #8B0000;">Nettoyer et recoder</strong> les données pour garantir leur fiabilité et faciliter l’exploitation statistique.</li>
+                    <li>Appliquer des <strong style="color: #8B0000;">analyses statistiques descriptives</strong> (moyennes, quartiles, graphiques empilés, barres, treemap).</li>
+                </ul>
+    
+                <p>J’ai également pris conscience de l’importance de <strong style="color: #8B0000;">l’organisation, la confidentialité</strong> des données et <strong style="color: #8B0000;">la rigueur méthodologique</strong> attendue dans un projet réel.</p>
+            </div>
+    
+            <div class="col-md-6">
+                <h6><strong>Apprentissage et bénéfices</strong></h6>
+                <p>Ce projet m’a permis de progresser dans :</p>
+                <ul>
+                    <li>La <strong style="color: #8B0000;">compréhension des structures de données</strong> à exploiter et la création d’un dictionnaire pour éviter les confusions.</li>
+                    <li>La mise en œuvre de <strong style="color: #8B0000;">visualisations dynamiques</strong> : carte de France, treemap, histogrammes, indicateurs clés…</li>
+                    <li>La capacité à <strong style="color: #8B0000;">expliciter les démarches analytiques</strong> et à <strong style="color: #8B0000;">communiquer clairement</strong> en français comme en anglais.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <div class="container context-background">
+        <h5 class="section-title">Preuves des compétences acquises</h5>
+        <p>Voici quelques éléments visuels illustrant les travaux réalisés et les compétences développées durant ce projet :</p>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <a href="projet4-1.png" data-lightbox="preuve" data-title="Extrait VBA">
+                    <img src="projet4-1.png" class="img-fluid rounded shadow-sm" alt="Preuve 1">
+                </a>
+                <p class="text-center"><strong>Extrait de notre code VBA permettant de transformer certaines variables</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet4-2.png" data-lightbox="preuve" data-title="Données mal codées">
+                    <img src="projet4-2.png" class="img-fluid rounded shadow-sm" alt="Preuve 2">
+                </a>
+                <p class="text-center"><strong>Extrait des données mal codées et supression de ces lignes</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet4-3.png" data-lightbox="preuve" data-title="Dictionnaire des données">
+                    <img src="projet4-3.png" class="img-fluid rounded shadow-sm" alt="Preuve 3">
+                </a>
+                <p class="text-center"><strong>Extrait de notre dictionnaire des données du fichier RPS</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet4-4.png" data-lightbox="preuve" data-title="Importation automatique des données">
+                    <img src="projet4-4.png" class="img-fluid rounded shadow-sm" alt="Preuve 4">
+                </a>
+                <p class="text-center"><strong>Importation des fichiers de données de façon automatique grâce aux différents boutons</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet4-5.png" data-lightbox="preuve" data-title="Données importées">
+                    <img src="projet4-5.png" class="img-fluid rounded shadow-sm" alt="Preuve 5">
+                </a>
+                <p class="text-center"><strong>Aperçu des données RAA importées avec succès</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet4-6.png" data-lightbox="preuve" data-title="Visualisation tableau de bord">
+                    <img src="projet4-6.png" class="img-fluid rounded shadow-sm" alt="Preuve 5">
+                </a>
+                <p class="text-center"><strong>Exemple de visualisation créée : histogramme empilé des types d'actes en fonction des professionnels de santé</strong></p>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <a href="projet4-7.png" data-lightbox="preuve" data-title="Visualisation tableau de bord">
+                    <img src="projet4-7.png" class="img-fluid rounded shadow-sm" alt="Preuve 5">
+                </a>
+                <p class="text-center"><strong>Exemple de visualisation créée : calculs statistiques et histogramme représentant le nombre de patients par tranches d'âge</strong></p>
+            </div>
+
+
+            <div class="col-md-6 mb-3">
+                <a href="projet4-8.png" data-lightbox="preuve" data-title="Poster">
+                    <img src="projet4-8.png" class="img-fluid rounded shadow-sm" alt="Preuve 5">
+                </a>
+                <p class="text-center"><strong>Extrait de notre poster réalisé à l'intention de l'Établissement</strong></p>
+            </div>
+
+            
+        </div>
+    </div>
+
+    
+    
+    
+
+    <div class="container text-center my-4">
+        <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mon Portfolio</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage-Alternance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+                        url('https://source.unsplash.com/1600x900/?data');
+            background-size: cover;
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+        }
+        .context-background {
+            background-color: #e9ecef;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .section-title {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .btn-primary {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+        .btn-primary:hover {
+            background-color: #8B0000;
+            border-color: #8B0000;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Compétences.html">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Projets.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Logiciels.html">Logiciels</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Stage-Alternance.html">Stage-Alternance</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Stage - Alternance</h1>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <h4 class="text-center" style="color: #8B0000; margin-bottom: 20px;">Stage - Amélioration du suivi de la qualité de la collecte des prix</h4>
+                <div class="context-background">
+                    <h5 class="section-title">Contexte</h5>
+                    <p><strong style="color: #8B0000;">L'Insee</strong> (Institut National de la Statistique et des Études Économiques) est un organisme public rattaché au ministère de l’Économie et des Finances. Créé en 1946, il est chargé de <strong style="color: #8B0000;">produire et de diffuser des données statistiques</strong> sur l’économie et la société françaises, afin d’éclairer les décisions publiques comme privées.</p>
+                    <p>Il s'appuie sur un réseau de <strong style="color: #8B0000;">15 directions régionales chargées de collecter, traiter et analyser les données</strong> en lien avec les acteurs publics locaux (services déconcentrés de l’État, collectivités territoriales, etc.)</p>
+                    <p>L’Insee Bretagne mène plusieurs missions fondamentales à l’échelle régionale. Le recensement de la population constitue une opération essentielle pour observer les évolutions démographiques locales. L’institut analyse également des données économiques telles que l’emploi, les revenus et l’activité des entreprises, contribuant ainsi à une meilleure compréhension de la situation économique bretonne. En parallèle, le <strong style="color: #8B0000;">suivi des prix à la consommation</strong> est assuré, notamment via le « site Prix » de Rennes, permettant de restituer une vision locale de l’inflation.</p>
+                    <p>C'est dans ce contexte que j'ai effectué mon stage au sein du site "Prix de Rennes". Mon stage, réalisé de <strong style="color: #8B0000;">mars 2025 à juin 2025</strong>, avait pour objectif d’améliorer le <strong style="color: #8B0000;">suivi de la qualité des données collectées</strong>, en mettant en place des outils d’automatisation et de suivi plus efficaces pour l'équipe bureau.</p>
+                </div>
+                <div class="container context-background">
+                    <h5 class="section-title">Objectif du Stage et missions</h5>
+                    <p>Le stage portait sur <strong style="color: #8B0000;">l'amélioration du suivi de la qualité de la collecte des prix</strong>, dans un environnement dynamique et axé sur l’analyse des prix de 21 000 produits collectés mensuellement par 35 enquêteurs sur 4 000 points de vente.</p>
+                    <p>Pour répondre à cet objectif, mes missions étaient structurées autour de plusieurs axes principaux :</p>
+                    <ul>
+                        <li><strong style="color: #8B0000;">Automatisation du processus de création des bilans mensuels via R</strong> : Grâce à l’utilisation de R, j’ai conçu un processus automatique permettant de générer des rapports mensuels détaillant la qualité des relevés de prix, les erreurs éventuelles, et les améliorations possibles.</li>
+                        <li><strong style="color: #8B0000;">Développement d’un outil de suivi des relevés de prix</strong> : J'ai créé un outil interactif en R Shiny pour visualiser en temps réel les éléments clés de la collecte des prix, permettant de suivre les progrès et d’identifier rapidement les anomalies dans le travail des enquêteurs.</li>
+                    </ul>
+                </div>
+                <div class="container context-background">
+                    <h5 class="section-title">Compétences requises et développées</h5>
+                    <p>Pour ce stage, plusieurs compétences étaient essentielles, et j'ai eu l'opportunité de les développer et de les appliquer dans un contexte concret :</p>
+                    <ul>
+                        <li><strong style="color: #8B0000;">Compétences en analyse de données</strong> : L’utilisation avancée de R pour analyser des ensembles de données complexes et tirer des conclusions pertinentes pour améliorer la collecte.</li>
+                        <li><strong style="color: #8B0000;">Statistiques descriptives</strong> : Analyse des données pour en extraire des tendances significatives et présenter des résultats clairs et compréhensibles.</li>
+                        <li><strong style="color: #8B0000;">R Markdown et R Shiny</strong> : Création de rapports automatisés avec R Markdown et d'outils interactifs de visualisation avec R Shiny.</li>
+                        <li><strong style="color: #8B0000;">Présentation et restitution des résultats</strong> : Rédaction de rapports complets et préparation de présentations pour les parties prenantes, afin de rendre compte des progrès réalisés et des recommandations proposées.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h4 class="text-center" style="color: #8B0000; margin-bottom: 20px;">Alternance : CHBA - Département d'Information Médicale (DIM)</h4>
+                <div class="context-background">
+                    <h5 class="section-title">Contexte</h5>
+                        <p>Au sein du <strong style="color: #8B0000;">Centre Hospitalier Bretagne Atlantique (CHBA)</strong>, le Département d’Information Médicale (DIM) a pour mission principale de <strong style="color: #8B0000;">collecter, structurer et analyser</strong> les données médicales relatives aux patients hospitalisés. Ces informations alimentent le PMSI (Programme de médicalisation des systèmes d’information) et sont transmises aux autorités de tutelle afin de <strong style="color: #8B0000;">valoriser l’activité médicale et contribuer à la tarification à l’activité (T2A)</strong> des établissements de santé. L’alternance, réalisée du <strong style="color: #8B0000;">1er septembre 2025 au 31 août 2026</strong>, s’inscrit donc dans un cadre professionnel exigeant, où la rigueur statistique et la compréhension du fonctionnement hospitalier sont essentielles.</p>
+                </div>
+                <div class="container context-background">
+                    <h5 class="section-title">Missions et réalisations</h5>
+                        <p>À mon arrivée, j’ai consacré du temps à comprendre l’organisation du service, la structure des bases de données hospitalières et les logiciels utilisés par l’équipe statistique. Cette phase d’appropriation m’a permis de me familiariser avec les contraintes des <strong style="color: #8B0000;">données médico-administratives</strong>, les règles de codage ainsi que le vocabulaire médical spécifique, indispensables pour travailler avec rigueur et autonomie.</p>
+
+                        <p>J’ai ensuite participé à la <strong style="color: #8B0000;">modernisation des outils du service en migrant plusieurs programmes</strong> développés sous Access vers Python. Ce travail a consisté à reproduire et optimiser des traitements portant sur des bases de données de plus d’un million d’enregistrements : nettoyage des données, création de variables, gestion des formats, détection d’anomalies et validation systématique des résultats par comparaison avec les programmes d’origine. J’ai également <strong style="color: #8B0000;">automatisé différents contrôles de cohérence administrative</strong>, permettant de générer des fichiers de suivi pour faciliter la correction des erreurs par les équipes.</p>
+
+                        <p>En parallèle, j’ai contribué à une <strong style="color: #8B0000;">étude épidémiologique</strong> réalisée dans le cadre d’une thèse de médecine portant sur le suivi nutritionnel de patients âgés hospitalisés. J’ai assuré la préparation et la structuration des données, mené les analyses statistiques <strong style="color: #8B0000;">(statistiques descriptives et tests d’hypothèses)</strong> et rédigé une synthèse interprétative des résultats en collaboration avec l’étudiante.</p>
+
+                        <p>Mon activité s’est ensuite élargie aux <strong style="color: #8B0000;">bases nationales du PMSI</strong> via la plateforme sécurisée de l’ATIH. Je réalise des requêtes sous SAS Guide afin d’extraire des données répondant à des problématiques spécifiques, puis j’exploite ces extractions sous RStudio pour produire des <strong style="color: #8B0000;">rapports automatisés</strong> avec R Markdown, incluant analyses statistiques et visualisations destinées aux médecins.</p>
+
+                        <p>Dans le cadre du déploiement d’un nouvel outil décisionnel, je réalise également du <strong style="color: #8B0000;">requêtage sous Business Objects</strong>. Cette mission consiste à vérifier l’exhaustivité et la cohérence des données intégrées, repérer d’éventuels biais ou écarts et accompagner les équipes dans la validation des indicateurs produits. Ce travail contribue à <strong style="color: #8B0000;">sécuriser la qualité des données utilisées pour le pilotage de l’activité hospitalière</strong>.</p>
+                </div>
+                
+                <div class="container context-background">
+                    <h5 class="section-title">Compétences développées</h5>
+                    <ul>
+                        <li>Cette alternance m’a permis de développer des <strong style="color: #8B0000;">compétences techniques avancées en Python</strong>, notamment pour le nettoyage et le traitement de très grands volumes de données, ainsi que la mise en place de programmes automatisés.</li>
+                        <li>J’ai également approfondi ma maîtrise des outils statistiques comme RStudio et SAS Guide, en appliquant mes connaissances pour <strong style="color: #8B0000;">produire des analyses fiables et reproductibles.</strong></li>
+                        <li>Sur le plan méthodologique, j’ai appris à structurer mon travail de manière à garantir la cohérence des résultats entre différents logiciels et à documenter chaque étape pour faciliter la compréhension par l’équipe DIM.</li>
+                    </ul> 
+                  
+                    <p>Cette expérience me permet de mieux comprendre le fonctionnement d’un service hospitalier, le rôle des données dans la prise de décision médicale, et la manière de communiquer efficacement des résultats statistiques à des non-spécialistes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container text-center my-4">
+        <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Mon Portfolio</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
